@@ -9,7 +9,7 @@ public class NumberOfPathsInMxNMatrix {
         if(n == 1 || m == 1){
             return 1;
         }
-        return countPathsRecursive(n-1, m) + countPathsRecursive(n, m-1);
+        return countPaths(n-1, m) + countPaths(n, m-1);
     }
     
     public int countPaths(int n,int m){
